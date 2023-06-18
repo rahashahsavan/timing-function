@@ -5,10 +5,10 @@ document.getElementById('BTN').addEventListener('click', function() {
   
   for (var i = 0; i < boxes.length; i++) {
     var box = boxes[i];
-    var transitionFunction = transitionFunctions[i % transitionFunctions.length];
+    var transitionFunction = transitionFunctions[i];
     if(box.offsetWidth <500){
       box.style.transitionTimingFunction = transitionFunction;
-      box.style.width = (box.offsetWidth + 100) + 'px';
+      box.style.width = (box.offsetWidth + 150) + 'px';
     }
 
   }
